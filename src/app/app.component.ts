@@ -16,7 +16,7 @@ export class AppComponent {
   constructor(private service: ServiceService) {}
 
   search(name: string) {
-    console.log('name');
+    console.log(name);
     this.service
       .search(name)
       .subscribe((characters) => (this.characters = characters));
